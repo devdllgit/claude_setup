@@ -1,0 +1,10 @@
+project:
+  root: ~/repos/claude_setup
+llms:
+  model: claude-code
+lsp:
+  languages: [python, sql]  # Adjust to your stack
+tools:
+  edit: true
+  search: true
+  symbol: true

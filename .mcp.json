@@ -1,0 +1,74 @@
+{
+  "mcpServers": {
+    "databricks": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "databricks-mcp-server@latest"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "envFile": "~/repos/claude_setup/.env",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ]
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "puppeteer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ]
+    },
+    "fetch": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@kazuph/mcp-fetch"
+      ]
+    },
+    "magic": {
+      "command": "npx",
+      "envFile": "~/repos/ai_setup/.env",
+      "args": [
+        "-y",
+        "@21st-dev/magic@latest",
+        "API_KEY=${21ST_DEV_API_KEY}"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    },
+    "serena": {
+        "command": "uvx",
+        "args": [
+          "--from", 
+          "git+https://github.com/oraios/serena", 
+          "serena-mcp-server"
+        ]
+    }
+  }
+}
